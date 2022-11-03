@@ -7,13 +7,17 @@ namespace Transcribe
 {
     public class UI_Main : MonoBehaviour
     {
+        
         [SerializeField] Transform parent;
         [SerializeField] UI_Line[] lines;
         [SerializeField] UI_Line line;
         [SerializeField] TextLoader loader;
         Book book;
 
-        public void Awake()
+        int pageIndex = 0;
+        int lineIndex = 0;
+
+        private void Awake()
         {
             loader.ReadString(ReadEnd);
         }
@@ -39,6 +43,12 @@ namespace Transcribe
             //        }
             //    }
             //}
+        }
+
+
+        public void LineSelect(int pageIndex, int lineIndex)
+        {
+            lines[lineIndex].Select(true);
         }
     }
 }
