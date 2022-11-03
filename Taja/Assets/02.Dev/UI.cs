@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UI : MonoBehaviour
+namespace Transcribe
 {
-    public static UI Inst;
-    static UI inst;
-
-    public void Awake()
+    public class UI : MonoBehaviour
     {
-        inst = this;
-    }
+        public static UI Inst;
+        static UI inst;
 
-    public void ShowUI()
-    {
+        public void Awake()
+        {
+            inst = this;
+        }
+
+        public void ShowUI()
+        {
+        }
     }
 }

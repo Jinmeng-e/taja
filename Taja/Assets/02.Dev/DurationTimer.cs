@@ -4,10 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DurationTimer : MonoBehaviour
+
+namespace Transcribe
 {
+    public class DurationTimer : MonoBehaviour
+    {
 
 
-    private float durationValue;
-    private TimeSpan duration;
+        private float durationValue;
+        private TimeSpan duration;
+    }
 }
